@@ -1,0 +1,30 @@
+.glass-card {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.349);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(0, 0, 0, 0.091);
+}
+
+.content-head{
+    height: 65px;
+
+}
+
+.display-picture{
+    height: 45px;
+    width: 45px;
+    border: 1px solid whitesmoke;
+}
+
+.aside{
+    width: 25%;
+    border: 1px solid white;
+}
+.nav-item-box{
+    height: 40px;
+    width: 100%;
+
+}

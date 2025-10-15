@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website Aromal P</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Load THREE.js and VANTA.js FOG effect -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- background style  -->
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #your-element-selector {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            width: 95vw;
+            height: 95vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background container -->
+    <div id="your-element-selector"></div>
+
+
+    <!-- Text or logo content -->
+    <div class="content glass-card rounded-5 parent">
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-4 border-bottom border-end p-2 content-head"></div>
+                <div class="col-8 border-bottom align-items-center d-flex justify-content-end content-head">
+                    <div class="rounded-circle display-picture">
+
+                    </div></div>
+            </div>
+
+
+             <div class="row">
+    <div class="col-4 border-end">
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+        <div class="nav-item-box"></div>
+    </div>
+    <div class="col-8 "></div>
+  </div>
+
+        </div>
+    </div>
+
+    <!-- Vanta.js initialization -->
+    <script>
+        VANTA.FOG({
+            el: "#your-element-selector",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            highlightColor: 0xffc300,   // glowing fog color
+            midtoneColor: 0xff1f00,     // secondary fog tint
+            lowlightColor: 0x2d00ff,    // deep color tone
+            baseColor: 0xffebeb,        // background color
+            blurFactor: 0.9,
+            speed: 2,
+            zoom: 1.0,
+            minHeight: 200.00,
+            minWidth: 200.00
+        })
+    </script>
+
+</body>
+
+</html>
